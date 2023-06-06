@@ -304,6 +304,151 @@ h2{
     color: var(--enfacis);
 }
 
+/* Estilos vista de proyectos ---------------------------------------- */
+
+.obra{
+    background-color: var(--base-oscuro);
+    background-image: url('media/avisaroback.jpg');
+    background-repeat: no-repeat;
+    background-size: 50em ;
+    color: var(--contraste);    
+    width: 34em;
+    height: 10em;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+}
+
+.obra h2{
+    margin: 0;
+}
+
+.tabla { 
+    background-color: var(--contraste);
+    width: 55em;
+    height: 10em;
+    padding: 2em;
+    border-radius: 20px;
+    margin: 1em;
+    float: left;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tabla table{
+    text-align: center;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.tabla td {
+    border-bottom: solid 1px var(--base-oscuro);
+    padding: 0.8em;    
+}
+
+.centrado{
+    text-align: center;
+}
+
+.a-izquierda{
+    text-align: left;
+}
+
+/* Estilos vista de documentos ---------------------------------------- */
+
+.documento{
+    background-color: var(--base-oscuro);
+    background-image: url('../media/docs.jpg');
+    background-repeat: no-repeat;
+    background-size: 30em ;
+    color: var(--contraste);    
+    width: 30em;
+    height: 15em;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.documento h2{
+    margin: 0;
+}
+
+.datosDoc { 
+    overflow: scroll;
+    background-color: var(--contraste);    
+    height: 30em;
+    width: 46em;
+    padding: 2em;
+    border-radius: 20px;
+    margin: 1em;
+    float: left;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);       
+}
+
+.informe .tabla{    
+    position: relative;
+    width: 30em;
+    height: 15em;
+    padding-top: 1em;
+    padding-bottom: 3em;    
+}
+
+.informe .tabla td{
+    padding: 0.1em;
+}
+
+.informe .botones{
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    font-size: 30px;
+}
+
+.informe a{
+    color: var(--base-oscuro);    
+}
+
+.informe a:hover{
+    color: var(--enfacis);
+}
+
+.estado{ 
+    position: absolute;
+    right: -50px;
+    top: 20px;
+    color: var(--contraste);
+    background-color: var(--enfacis);
+    font-size: 0.7em;
+    font-weight: 400;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 0.5em;
+    margin: 0.2em;
+    text-align: center;
+    width: 15em;
+    transform: rotate(45deg)
+}
+
+.documento .botones{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+}
+
+.documento .botones a{
+    color: var(--contraste);
+}
+
+.documento .botones a:hover{
+    color: var(--enfacis);
+}
+
+
 /* Footer ---------------------------------- */
 footer .row {
     text-align: center;
@@ -316,6 +461,9 @@ footer .row {
         display: none;
     }
     .tarjetero{
+        justify-content: center;
+    }
+    .informe{
         justify-content: center;
     }
     .header__logo {
