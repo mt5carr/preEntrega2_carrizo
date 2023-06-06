@@ -13,13 +13,7 @@ html{
 
 body{
     background-color: var(--base-oscuro);
-    display: grid;
-    grid-template-areas: 
-        "nav header"
-        "nav panel"
-        "nav footer";
-    grid-template-columns: 250px auto ;
-    grid-template-rows: 70px auto 50px;
+
     height: 100vh;
 }
 
@@ -65,12 +59,25 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
+    border: 3px solid black
 }
 
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: var(--base-oscuro);
+    width: 300px;
+    border: 3px solid black
+}
+
+
 .saludo{
+    justify-content: space-between;
     color: var(--base-oscuro);
-    font-size: 1.5em;
-    font-weight: 800;
+    border: 3px solid black
+
 }
 
 header ul{
@@ -93,14 +100,9 @@ nav {
     background-color: var(--base-oscuro);
 }
 
-.nav__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75px;
-}
 
-.nav__img{
+
+.header__img{
     width: 130px;
 }
 
@@ -282,7 +284,6 @@ nav li i:hover{
     top: 162px;
 }
 
-/* Elementos sin comenzar  */
 .sc i{
     text-align: right;
     color: var(--base-oscuro);
