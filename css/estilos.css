@@ -6,10 +6,6 @@ html{
     --contraste: #ffffff;
 }
 
-.bg-dark{
-    background-color: var(--base-oscuro);
-    color: var(--contraste);
-}
 
 .bg-pale{
     background-color: var(--contraste);
@@ -30,6 +26,10 @@ h2{
     padding: 20px;
 }
 
+.al-ri{
+    justify-content: start;
+}
+
 /* header ---------------------------------- */
 
 .header__logo {
@@ -38,6 +38,7 @@ h2{
     background-color: var(--base-oscuro);
     height: 100px;
     padding: 0;
+    width: 220px;
 }
 
 .header__img{
@@ -61,6 +62,42 @@ h2{
     color: var(--base-oscuro);
 }
 
+.sobrePanel{
+    background-color: var(--contraste);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding-left: 20px;
+}
+.saludo{
+    color: var(--base-oscuro);
+    text-align: center;
+    font-size: 1em;
+    float: left;
+    font-size: 1.5em;
+    font-weight: 800;
+    width: auto;
+}
+
+.usuario{
+    width: 200px;
+}
+
+.sobrePanel ul{
+    list-style: none;
+    text-align: right ;
+}
+
+.sobrePanel li {
+    background-color: var(--contraste);
+    display: inline;
+    margin-right: 5px;
+    padding-left: 0.5em;
+    padding-right: 0.5em ;
+  }
+
 
 /* Nav ---------------------------------- */
 
@@ -83,7 +120,6 @@ h2{
 }
 
 .nav__icon{
-    font-size: 20px;
     margin: 0 18px;
     align-self: center;
     width: 1em;
@@ -94,6 +130,14 @@ h2{
     text-decoration: none;
 }
 
+.navDesktop a:hover{
+    color: var(--enfacis)
+}
+
+.nav__subitems{
+    font-size: 12px;
+    margin-left: 1.2em;
+}
 /* main ---------------------------------- */
 
 .avisador h2{
@@ -114,15 +158,21 @@ h2{
 
 /* Estilos de las tarjetas ---------------------------------------- */
 
+.tarjetero{
+    background-color: var(--base-claro);
+    overflow: hidden;
+    justify-content: start;
+}
+
 .tarjeta{
     position: relative;
-    display: inline-block;
+    display:inline-block;
     background-color: var(--contraste);
-    width: 80%;
-    height: auto;
+    width: 300px;
+    height: 200px;
     padding: 1.5em;
     border-radius: 20px;
-    margin: 2em;
+    margin: 1em;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -130,7 +180,7 @@ h2{
     padding: 0 0 0.5em 0;
 }
 
-.tarjeta h3 {
+.tarjeta h1 {
     font-size: 1.2em;
 }
 
@@ -141,7 +191,7 @@ h2{
 .tarjeta p{
     padding-bottom: 2em;
     font-size: 0.9em;
-    height: 2.5em;
+    height: 3em;
     overflow: hidden;
     margin-bottom: 1em;
 }
@@ -149,6 +199,9 @@ h2{
 .icono {
     background-color: var(--base-claro);
     float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 3em;
     line-height: 70px;
     height: 3em;
@@ -211,9 +264,44 @@ h2{
     top: 162px;
 }
 
+/* Elementos sin comenzar  */
+.sc i{
+    text-align: right;
+    color: var(--base-oscuro);
+    font-size: 4em;
+    float: right;
+    margin-bottom: 0.5em; 
+    margin-top: -0.5em; 
+}
 
-.rigth-algine{
-    justify-content: start;
+.sc i:hover{
+    color: var(--enfacis);
+}
+
+.sc h1{
+    color: var(--base-claro);
+}
+
+.sc p{
+    color: var(--base-claro);
+}
+
+.tarjeta a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Elementos Ejecución */
+.ejec i{
+    text-align: right;
+    color: var(--base-oscuro);
+    font-size: 1.5em;
+    float: right;
+    margin-right: 0.5em ;
+}
+
+.ejec i:hover{
+    color: var(--enfacis);
 }
 
 /* Footer ---------------------------------- */
@@ -223,13 +311,22 @@ footer .row {
 
 
 
-@media (max-width: 767px){
+@media (max-width: 860px){
     .navDesktop{
+        display: none;
+    }
+    .tarjetero{
+        justify-content: center;
+    }
+    .header__logo {
+        width: 100%;
+    }
+    .usuario{
         display: none;
     }
 
 }
-@media (min-width: 767px){
+@media (min-width: 860px){
     .navMobile{
         display: none;
     }

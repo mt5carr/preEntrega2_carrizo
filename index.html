@@ -16,9 +16,9 @@
     
     <header class="container-fluid">
 
-        <div class="row">
+        <div class="row al-ri">
 
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 bg-dark pd20 header__logo">
+            <div class="header__logo">
                 <div class="header__contenedorLogo pd20">
                     <a href="index.html"><img src="media/Logo.svg" alt="" class="header__img"></a>
                 </div>
@@ -28,6 +28,9 @@
                         <i class="fa-solid fa-bars"></i>
                     </button>
                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-user nav__icon"></i>mcarrizo</a></li>
+                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-bell nav__icon"></i>Notificaciones</a></li>
+                        <hr>
                         <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-table-cells-large nav__icon"></i>Inicio</a></li>
                         <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-folder nav__icon"></i>Proyectos</a></li>
                         <li><a class="dropdown-item" href="#"><li><i class="fa-regular fa-file nav__icon"></i>Repositorio</a></li>
@@ -41,14 +44,19 @@
                 
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bg-pale pd20 " style="border: 2px solid green;">
-                <h1>Bienvenido,</h1> <h2><b>Matias Carrizo</b></h2>
-            </div>
+            <div class="sobrePanel">
+                <div class="saludo" style="border: 2px solid green;">
+                    <h1>Bienvenido,</h1> <h2><b>Matias Carrizo</b></h2>
+                </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 bg-pale pd20" style="border: 2px solid green;">
-                mcarrizo
+                <div class="usuario">                       
+                    <ul>
+                        <li><i class="fa-solid fa-bell"></i></li>
+                        <li>mcarrizo  <i class="fa-solid fa-angle-down"></i></li>
+                    </ul>
+                </div>
             </div>
-
+            
         </div>
 
     </header>
@@ -59,9 +67,9 @@
                 <ul class="nav__list">
                     <a href="index.html" class="nav__link"><li><i class="fa-solid fa-table-cells-large nav__icon"></i>Inicio</li></a>
                     <a href="pages/proyecto.html" class="nav__link" ><li><i class="fa-solid fa-folder nav__icon"></i>Proyectos</li></a>
-                        <a href="pages/proyecto.html" class="nav__link"><li class="subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0010-08</li></a>
-                        <a href="pages/proyecto.html" class="nav__link"><li class="subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0016-32</li></a>
-                        <a href="pages/proyecto.html" class="nav__link"><li class="subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0040-01</li></a>
+                        <a href="pages/proyecto.html" class="nav__link"><li class="nav__subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0010-08</li></a>
+                        <a href="pages/proyecto.html" class="nav__link"><li class="nav__subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0016-32</li></a>
+                        <a href="pages/proyecto.html" class="nav__link"><li class="nav__subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0040-01</li></a>
                     <a href="pages/repositorio.html" class="nav__link"><li><i class="fa-regular fa-file nav__icon"></i>Repositorio</li></a>
                     <a href="pages/mensajeria.html" class="nav__link"><li><i class="fa-solid fa-comments nav__icon"></i>Mensajes</li></a>
                     <hr>
@@ -114,94 +122,91 @@
                 </div>
 
 
-                <div class="row rigth-algine" style="border: 2px solid green;">
-
-
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="border: 2px solid blue;">
-                        <div class="tarjeta ejec">
-                            <a href="pages/documento.html">
-                                <div class="encabezado">
-                                    <div class="icono">
-                                        <img src="media/PecomShell.svg" alt="" >
-                                    </div>
-                                    <h3> I-0016-32-CE-MC-01</h3>
-                                    <small>Vence: 16/05/2023 (10 días) </small>
+                <div class="row tarjetero">
+                
+                    <div class="tarjeta ejec ">
+                        <a href="pages/documento.html"> 
+                            <div class="encabezado">
+                                <div class="icono">
+                                    <img src="media/PecomShell.svg" alt="" >
                                 </div>
-                                <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
-                            </a>
-                            <h6 class="ejecucion">Ejecución</h6>
-                            <div class="botones">
-                                <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
-                                <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
-                            </div>  
-                        </div>
+                                <h1>I-0016-32-CE-MC-01</h1>
+                                <small>Vence: 16/05/2023 (10 días) </small>
+                            </div>                    
+                            <p>Memoria de cálculo - Estructura metálica nuevo depósito</p>
+                        </a>
+                        <h6 class="ejecucion">Ejecución</h6>
+                        <div class="botones">
+                            <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
+                            <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
+                        </div>  
                     </div>
-
-
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="border: 2px solid blue;">
-                        <div class="tarjeta ejec">
-                            <a href="pages/documento.html">
-                                <div class="encabezado">
-                                    <div class="icono">
-                                        <img src="media/PecomShell.svg" alt="" >
-                                    </div>
-                                    <h3> I-0016-32-CE-MC-01</h3>
-                                    <small>Vence: 16/05/2023 (10 días) </small>
-                                </div>
-                                <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
-                            </a>
-                            <h6 class="ejecucion">Ejecución</h6>
-                            <div class="botones">
-                                <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
-                                <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-
                     
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="border: 2px solid blue;">
-                        <div class="tarjeta ejec">
-                            <a href="pages/documento.html">
-                                <div class="encabezado">
-                                    <div class="icono">
-                                        <img src="media/PecomShell.svg" alt="" >
-                                    </div>
-                                    <h3> I-0016-32-CE-MC-01</h3>
-                                    <small>Vence: 16/05/2023 (10 días) </small>
+    
+    
+                    <div class="tarjeta ejec ">
+                        <a href="pages/documento.html">
+                            <div class="encabezado">
+                                <div class="icono">
+                                    <img src="media/PecomShell.svg" alt="" >
                                 </div>
-                                <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
-                            </a>
-                            <h6 class="ejecucion">Ejecución</h6>
-                            <div class="botones">
-                                <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
-                                <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
-                            </div>  
-                        </div>
+                                <h1> I-0016-32-CE-MC-01</h1>
+                                <small>Vence: 16/05/2023 (10 días) </small>
+                            </div>
+                            <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
+                        </a>
+                        <h6 class="ejecucion">Ejecución</h6>
+                        <div class="botones">
+                            <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
+                            <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
+                        </div>  
                     </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="border: 2px solid blue;">
-                        <div class="tarjeta ejec">
-                            <a href="pages/documento.html">
-                                <div class="encabezado">
-                                    <div class="icono">
-                                        <img src="media/PecomShell.svg" alt="" >
-                                    </div>
-                                    <h3> I-0016-32-CE-MC-01</h3>
-                                    <small>Vence: 16/05/2023 (10 días) </small>
+    
+    
+                    <div class="tarjeta sc ">
+                        <a href="pages/documento.html">
+                            <div class="encabezado">
+                                <div class="icono">
+                                    <img src="media/PecomShell.svg" alt="" >
                                 </div>
-                                <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
-                            </a>
-                            <h6 class="ejecucion">Ejecución</h6>
-                            <div class="botones">
-                                <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
-                                <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
-                            </div>  
-                        </div>
+                                <h1> I-0016-32-CE-MC-01</h1>
+                                <small>Vence: 16/05/2023 (10 días) </small>
+                            </div>
+                            <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
+                        </a>
+                        <h6 class="sinComenzar">Sin comenzar</h6>
+                        <a href="" title="Comenzar Tarea"><i class="fa-solid fa-circle-play"></i></a>
                     </div>
-
-                    
-
-
+    
+                    <div class="tarjeta sc ">
+                        <a href="pages/documento.html">
+                            <div class="encabezado">
+                                <div class="icono">
+                                    <img src="media/PecomShell.svg" alt="" >
+                                </div>
+                                <h1> I-0016-32-CE-MC-01</h1>
+                                <small>Vence: 16/05/2023 (10 días) </small>
+                            </div>
+                            <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
+                        </a>
+                        <h6 class="sinComenzar">Sin comenzar</h6>
+                        <a href="" title="Comenzar Tarea"><i class="fa-solid fa-circle-play"></i></a>
+                    </div>
+    
+                    <div class="tarjeta sc ">
+                        <a href="pages/documento.html">
+                            <div class="encabezado">
+                                <div class="icono">
+                                    <img src="media/PecomShell.svg" alt="" >
+                                </div>
+                                <h1> I-0016-32-CE-MC-01</h1>
+                                <small>Vence: 16/05/2023 (10 días) </small>
+                            </div>
+                            <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
+                        </a>
+                        <h6 class="sinComenzar">Sin comenzar</h6>
+                        <a href="" title="Comenzar Tarea"><i class="fa-solid fa-circle-play"></i></a>
+                    </div>
                 </div>
 
                 
