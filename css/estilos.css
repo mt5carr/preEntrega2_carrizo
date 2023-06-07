@@ -6,7 +6,6 @@ html{
     --contraste: #ffffff;
 }
 
-
 .bg-pale{
     background-color: var(--contraste);
 }
@@ -138,6 +137,7 @@ h2{
     font-size: 12px;
     margin-left: 1.2em;
 }
+
 /* main ---------------------------------- */
 
 .avisador h2{
@@ -326,8 +326,8 @@ h2{
 
 .tabla { 
     background-color: var(--contraste);
-    width: 55em;
-    height: 10em;
+    width: auto;
+    height: auto;
     padding: 2em;
     border-radius: 20px;
     margin: 1em;
@@ -362,7 +362,7 @@ h2{
     background-repeat: no-repeat;
     background-size: 30em ;
     color: var(--contraste);    
-    width: 30em;
+    width: 25em;
     height: 15em;
     padding: 2em;
     border-radius: 20px;
@@ -380,7 +380,7 @@ h2{
     overflow: scroll;
     background-color: var(--contraste);    
     height: 30em;
-    width: 46em;
+    width: 52em;
     padding: 2em;
     border-radius: 20px;
     margin: 1em;
@@ -390,7 +390,7 @@ h2{
 
 .informe .tabla{    
     position: relative;
-    width: 30em;
+    width: 25em;
     height: 15em;
     padding-top: 1em;
     padding-bottom: 3em;    
@@ -448,14 +448,14 @@ h2{
     color: var(--enfacis);
 }
 
-
 /* Footer ---------------------------------- */
 footer .row {
     text-align: center;
 }
 
+/* Medias queris ----------------------------------------- */
 
-
+/* Media para mobile */
 @media (max-width: 860px){
     .navDesktop{
         display: none;
@@ -472,8 +472,22 @@ footer .row {
     .usuario{
         display: none;
     }
+    .datosDoc{
+        width: 90%;
+    }
+    .obra{
+        width: 90%;
+    }
+    .tabla{
+        justify-content: center;
+    }
+    .tabla__descripcion{
+        display: none;
+    }
 
 }
+
+/* Media para desktop */
 @media (min-width: 860px){
     .navMobile{
         display: none;
