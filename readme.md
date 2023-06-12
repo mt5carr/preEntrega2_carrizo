@@ -1,4 +1,4 @@
-# Segunda Pre-entrega curso DISEÑO WEB 📲- CODERHAUSE
+# Segunda Pre-entrega curso DISEÑO WEB 📲- CODERHOUSE
 ---
 ## Consideraciones
 
